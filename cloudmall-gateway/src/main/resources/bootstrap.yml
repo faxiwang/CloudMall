@@ -1,0 +1,11 @@
+#spring.application.name=cloudmall-gateway
+#spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+#spring.cloud.nacos.config.namespace=b00eeda9-7c04-4f7f-ad15-2661db10c65c
+spring:
+  application:
+    name: cloudmall-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: f7179764-26cf-4811-98be-c9defb204888

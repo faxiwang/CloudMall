@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.faxi.cloudmall.member.mapper.GrowthChangeHistoryMapper">
+
+  <resultMap id="growthChangeHistoryMap" type="com.faxi.cloudmall.member.entity.GrowthChangeHistory">
+                  <id property="id" column="id"/>
+                        <result property="memberId" column="member_id"/>
+                        <result property="createTime" column="create_time"/>
+                        <result property="changeCount" column="change_count"/>
+                        <result property="note" column="note"/>
+                        <result property="sourceType" column="source_type"/>
+            </resultMap>
+</mapper>

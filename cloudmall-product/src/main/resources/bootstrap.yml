@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cloudmall-product
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 1a83a36d-fe9e-4e6a-a403-a1314932c4d1
