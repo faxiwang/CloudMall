@@ -2,13 +2,44 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
 
-	<groupId>com.fox.cloudmall</groupId>
+	<groupId>com.faxi.cloudmall</groupId>
 	<artifactId>cloudmall</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cloudmall</name>
 	<description>在线商城</description>
 	<packaging>pom</packaging>
+
+	<properties>
+		<spring-boot.version>2.5.0</spring-boot.version>
+		<spring-cloud.version>2020.0.3</spring-cloud.version>
+		<spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<spring-boot-admin.version>2.4.1</spring-boot-admin.version>
+		<security.version>2.1.2.RELEASE</security.version>
+		<hutool.version>5.6.6</hutool.version>
+		<mybatis-plus.version>3.4.3</mybatis-plus.version>
+		<dynamic-ds.version>3.3.2</dynamic-ds.version>
+		<captcha.version>2.2.0</captcha.version>
+		<velocity.version>1.7</velocity.version>
+		<configuration.version>1.10</configuration.version>
+		<nacos.version>2.0.1</nacos.version>
+		<jasypt.version>2.1.0</jasypt.version>
+		<swagger.fox.version>3.0.0</swagger.fox.version>
+		<httpcore.version>4.4.12</httpcore.version>
+		<lombok.version>1.12.4</lombok.version>
+		<mysql.version>8.0.21</mysql.version>
+		<openfeign.version>3.0.3</openfeign.version>
+        <fastjson.version>1.2.73</fastjson.version>
+	</properties>
 
 	<modules>
 		<module>cloudmall-coupon</module>
@@ -16,6 +47,10 @@
 		<module>cloudmall-order</module>
 		<module>cloudmall-product</module>
 		<module>cloudmall-ware</module>
+		<module>cloudmall-common</module>
+		<module>cloudmall-admin</module>
+		<module>cloudmall-gateway</module>
+        <module>cloudmall-thirdparty</module>
 	</modules>
 
 </project>
